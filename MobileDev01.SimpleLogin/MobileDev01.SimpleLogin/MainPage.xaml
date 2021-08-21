@@ -6,7 +6,7 @@
 
     <StackLayout>
         <Frame BackgroundColor="black" Padding="20" CornerRadius="0">
-            <Label Text="Bienvenido a mi PowerApp!" HorizontalTextAlignment="Center" TextColor="Beige" FontSize="34"/>
+            <Label Text="Bienvenido a mi PowerApp!" HorizontalTextAlignment="Center" TextColor="White" FontSize="34"/>
         </Frame>
         <Image Source="powerapplogo.png" HeightRequest="200" HorizontalOptions="Center" WidthRequest="200"/>
         <Label Text="Digite sus Credenciales" FontSize="Title" HorizontalOptions="Center" Padding="30,10,30,10"/>
