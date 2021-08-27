@@ -14,7 +14,7 @@ namespace MobileDev01.SimpleLogin
             InitializeComponent();
         }
 
-        async private void OnLoginButtonClick(object sender, EventArgs e) {
+        private async void OnLoginButtonClick(object sender, EventArgs e) {
             if(usernameEntry.Text == null || usernameEntry.Text.Length == 0) {
                 await DisplayAlert("Error: Falta información", "El campo del nombre de usuario no puede estar vacío.", "OK");
                 usernameEntry.Focus();
