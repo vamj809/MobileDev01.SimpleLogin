@@ -14,15 +14,15 @@ namespace MobileDev01.SimpleLogin
             InitializeComponent();
         }
 
-        private void LoginButton_Clicked(object sender, EventArgs e) {
-            if(UserName.Text == null || UserName.Text.Length == 0) {
-                DisplayAlert("Error: Falta información", "El campo del nombre de usuario no puede estar vacío.", "OK");
-                UserName.Focus();
-            } else if(Password.Text == null || Password.Text.Length == 0) {
-                DisplayAlert("Error: Falta información", "El campo de contraseña no puede estar vacío.", "OK");
-                Password.Focus();
+        async private void OnLoginButtonClick(object sender, EventArgs e) {
+            if(usernameEntry.Text == null || usernameEntry.Text.Length == 0) {
+                await DisplayAlert("Error: Falta información", "El campo del nombre de usuario no puede estar vacío.", "OK");
+                usernameEntry.Focus();
+            } else if(passwordEntry.Text == null || passwordEntry.Text.Length == 0) {
+                await DisplayAlert("Error: Falta información", "El campo de contraseña no puede estar vacío.", "OK");
+                passwordEntry.Focus();
             } else { 
-                DisplayAlert("Bienvenido", $"Hola {UserName.Text}", "Gracias");
+                await DisplayAlert("Bienvenido", $"Hola {usernameEntry.Text}", "Gracias");
             }
         }
     }

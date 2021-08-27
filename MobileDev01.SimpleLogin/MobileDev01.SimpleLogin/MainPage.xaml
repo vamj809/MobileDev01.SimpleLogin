@@ -10,9 +10,9 @@
         </Frame>
         <Image Source="powerapplogo.png" HeightRequest="200" HorizontalOptions="Center" WidthRequest="200"/>
         <Label Text="Digite sus Credenciales" FontSize="Title" HorizontalOptions="Center" Padding="30,10,30,10"/>
-        <Entry x:Name="UserName" Placeholder="Nombre de Usuario" Margin="20,0,20,0"/>
-        <Entry x:Name="Password" Placeholder="Clave" IsPassword="True" Margin="20,0,20,0"/>
-        <Button x:Name="LoginButton" Text="Iniciar Sesión" Clicked="LoginButton_Clicked"></Button>
+        <Entry x:Name="usernameEntry" Placeholder="Nombre de Usuario" Margin="20,0,20,0"/>
+        <Entry x:Name="passwordEntry" Placeholder="Clave" IsPassword="True" Margin="20,0,20,0"/>
+        <Button x:Name="loginButton" Text="Iniciar Sesión" Clicked="OnLoginButtonClick"></Button>
     </StackLayout>
 
 </ContentPage>
